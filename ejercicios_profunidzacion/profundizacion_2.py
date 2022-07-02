@@ -35,3 +35,23 @@ alguno de lo soportados o no es la palabra "FIN".
 
 print("Mi Calculadora (^_^)")
 # Empezar aquí la resolución del ejercicio
+resultado = 0
+primer_numero = int(input('Ingresar numero\n'))
+segundo_numero = int(input('Ingresar otro numero\n'))
+
+print('Ingresa el simbolo de la operación que deseas realizar:')
+print('Suma (+), Resta (-), Multiplicación(*), División(/), Potencia (**)')
+operación = str(input('ingresar operador\n'))
+
+if operación == '+':
+    resultado = primer_numero + segundo_numero
+elif operación == '-':
+    resultado = primer_numero - segundo_numero
+elif operación == '*':
+    resultado = primer_numero * segundo_numero
+elif operación == '/':
+    resultado = primer_numero / segundo_numero
+elif operación == '**':
+    resultado = primer_numero ** segundo_numero
+
+print('resultado=',resultado)
