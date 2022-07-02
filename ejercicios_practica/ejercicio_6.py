@@ -16,6 +16,9 @@
 # Tener en cuenta que "range" no incluye el número de "fin" en su secuencia,
 # sino que va hasta el anterior
 
+from itertools import count
+
+
 inicio = int(input('Ingrese el primer número de la secuencia\n'))
 fin = int(input('Ingrese el último número de la secuencia\n'))
 
@@ -23,6 +26,15 @@ cantidad_numeros_positivos = 0  # Inicializo el contador en 0
 
 # for ... in range(....)
 
+lista = range(inicio,fin)
+for numero in range(inicio,fin):
+    
+    if numero >= 0:
+        cantidad_numeros_positivos += 1
+
 # Imprimir el valor de la cantidad de números positivos y negativos
+
+print('cantidad de numeros positivos =',cantidad_numeros_positivos)
+print('cantidad de numeros negativos =',len(lista) - cantidad_numeros_positivos)
 
 print("terminamos!")
