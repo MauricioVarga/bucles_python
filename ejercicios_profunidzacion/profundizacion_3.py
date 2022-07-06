@@ -72,5 +72,16 @@ print ('promedio=',promedio)
 # Utilice la nota promedio calculada y transformela
 # a calificación con letras, imprima en pantalla el resultado
 
+if promedio < 60:
+    print('Calificación promedio = F')
+elif promedio < 70:
+    print('Calificación promedio = D')
+elif promedio < 80:
+    print('Calificación promedio = C')
+elif promedio < 90:
+    print('Calificación promedio = B')
+else:
+    print('Calificación promedio = A')
+
 # Imprima en pantalla al cantidad de ausentes
 print('cantidad de ausentes =',cantidad_ausentes)
